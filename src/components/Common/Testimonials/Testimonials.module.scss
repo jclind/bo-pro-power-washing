@@ -1,1 +1,52 @@
 @use '../../../styles/vars' as *;
+
+.testimonials {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      margin-bottom: $gap-medium;
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: $gap-large;
+      width: 100%;
+      margin: $gap-large auto;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+
+        .icon_container {
+          .icon {
+            height: 30px;
+            width: 30px;
+            color: $primary-accent;
+          }
+        }
+        p {
+          text-align: left;
+          font-size: $fs-regular;
+        }
+        .filledStar {
+          color: $primary-accent;
+          height: 18px;
+          width: 18px;
+        }
+        .name {
+          font-weight: 700;
+          font-size: $fs-regular;
+        }
+      }
+    }
+  }
+}
