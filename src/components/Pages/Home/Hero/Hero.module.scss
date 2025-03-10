@@ -1,6 +1,8 @@
 @use '../../../../styles/vars' as *;
 
 .hero {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
   .content {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,17 @@
       display: flex;
       gap: $gap-large;
       margin: 0 auto;
+    }
+  }
+  .image {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $gap-large;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
     }
   }
 }

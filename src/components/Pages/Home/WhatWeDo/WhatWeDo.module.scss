@@ -1,0 +1,69 @@
+@use '../../../../styles/vars' as *;
+
+$gradient-background-point-1: #d1eefc;
+$gradient-background-point-2: #97d6f9;
+$gradient-background: linear-gradient(
+  to right,
+  $gradient-background-point-1,
+  $gradient-background-point-2
+);
+
+.what_we_do {
+  background: $gradient-background;
+
+  p {
+    margin-top: $gap-large;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-large;
+      width: 100%;
+      margin: $gap-xl 0;
+
+      .service {
+        display: flex;
+        flex-shrink: 0;
+        gap: $gap-regular;
+        width: 100%;
+        background: $white;
+
+        .service_icon {
+          display: flex;
+          flex-shrink: 0;
+          justify-content: center;
+          align-items: center;
+          height: 54px;
+          width: 54px;
+          border: 1px solid $secondary-text;
+          border-radius: 50%;
+          margin: auto 0;
+          .icon {
+            height: 30px;
+            width: 30px;
+            color: $secondary-accent;
+          }
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          h2 {
+            font-size: $fs-medium;
+          }
+          p {
+            text-align: start;
+            margin-top: $gap-tiny;
+          }
+        }
+      }
+    }
+  }
+}

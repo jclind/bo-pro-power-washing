@@ -8,7 +8,7 @@ const PageNotFound = () => {
       <div className='page__inner'>
         <div className={styles.container}>
           <div className={styles.image}>
-            <img src='/images/page_not_found.svg' alt='Page Not Found' />
+            <img src='/images/page-not-found.svg' alt='Page Not Found' />
           </div>
 
           <div className={styles.content}>

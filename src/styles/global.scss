@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   font-family: $font-family-base;
   color: $primary-text;
-  background-color: #fff;
+  background-color: $primary-background;
   width: 100%;
   margin: 0 auto;
 }
@@ -109,7 +109,7 @@ button,
   text-align: center;
 }
 .section-title {
-  font-size: $fs-large;
+  font-size: $fs-xlarge;
   font-weight: 800;
   text-align: center;
 
@@ -134,6 +134,9 @@ button,
   color: $secondary-text;
 
   letter-spacing: -0.5px;
+
+  // @media screen (min-width: 500px) {
+  // }
 }
 .text-inverted {
   color: $primary-background;
@@ -151,7 +154,6 @@ button,
   border-radius: $border-radius-card;
   padding: $gap-medium;
   box-shadow: $box-shadow-card;
-  max-width: 320px;
   width: 100%;
   .card-title {
     font-size: $fs-medium;
