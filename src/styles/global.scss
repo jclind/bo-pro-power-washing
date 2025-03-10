@@ -159,6 +159,7 @@ button,
   padding: $gap-medium;
   box-shadow: $box-shadow-card;
   width: 100%;
+  max-width: $card-max-width;
   .card-title {
     font-size: $fs-medium;
   }

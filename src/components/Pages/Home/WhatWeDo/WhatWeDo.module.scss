@@ -18,14 +18,18 @@ $gradient-background: linear-gradient(
   .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: $gap-xl;
+    .button_container_desktop {
+      display: none;
+    }
     .services {
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
       gap: $gap-large;
       width: 100%;
-      margin: $gap-xl 0;
-
       .service {
         display: flex;
         flex-shrink: 0;
@@ -64,6 +68,42 @@ $gradient-background: linear-gradient(
           }
         }
       }
+    }
+  }
+  @media (min-width: 800px) {
+    .content {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      .text_section {
+        max-width: 400px;
+        min-width: 300px;
+        h1,
+        p {
+          text-align: left;
+          width: 100%;
+        }
+        .button_container_desktop {
+          display: flex;
+          margin-top: $gap-xl;
+        }
+      }
+    }
+    .services {
+      max-width: $card-max-width;
+
+      .service_icon {
+        height: 60px;
+        width: 60px;
+        .icon {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+    .button_container_mobile {
+      display: none;
     }
   }
 }
