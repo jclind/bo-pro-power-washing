@@ -3,7 +3,7 @@ import styles from './testimonials.module.scss'
 import { testimonialList } from './testimonialList'
 import { FaQuoteLeft, FaStar, FaRegStar } from 'react-icons/fa'
 const Testimonials = () => {
-  const renderStars = rating => {
+  const renderStars = (rating: number) => {
     const maxStars = 5 // Maximum number of stars
 
     return Array.from({ length: maxStars }, (_, index) =>
