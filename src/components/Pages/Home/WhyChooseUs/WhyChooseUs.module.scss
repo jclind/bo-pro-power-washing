@@ -6,14 +6,23 @@
     flex-direction: column;
     align-items: center;
     gap: $gap-large;
+    .top_section {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-large;
+    }
     .text_section {
       h1 {
         margin-bottom: $gap-medium;
+      }
+      p {
+        margin: 0 auto;
       }
     }
     .image {
       width: 100%;
       max-width: 550px;
+      margin: 0 auto;
       img {
         width: 100%;
         object-fit: contain;
@@ -24,6 +33,7 @@
 
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: $gap-medium;
       border-top: $value-border;
       border-bottom: $value-border;
@@ -54,6 +64,29 @@
             text-align: center;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .content {
+      .top_section {
+        flex-direction: row;
+        gap: $gap-xl;
+
+        .text_section {
+          justify-content: flex-start;
+          h1,
+          p {
+            text-align: left;
+            padding: 0;
+            margin-left: 0;
+          }
+        }
+      }
+      .values {
+        gap: $gap-xl;
+        padding: $gap-xl 0;
       }
     }
   }
