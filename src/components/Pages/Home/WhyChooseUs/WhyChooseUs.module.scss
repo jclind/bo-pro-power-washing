@@ -1,1 +1,60 @@
 @use '../../../../styles/vars' as *;
+
+.why_choose_us {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-large;
+    .text_section {
+      h1 {
+        margin-bottom: $gap-medium;
+      }
+    }
+    .image {
+      width: 100%;
+      max-width: 550px;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .values {
+      $value-border: 1px solid $border-color;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: $gap-medium;
+      border-top: $value-border;
+      border-bottom: $value-border;
+      padding: $gap-large 0;
+
+      .value {
+        width: 100%;
+        .head {
+          display: flex;
+          align-items: center;
+          gap: $gap-small;
+          color: $primary-accent;
+          width: 100%;
+          // justify-content: center;
+          margin-bottom: $gap-regular;
+          .value_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon {
+              height: 24px;
+              width: 24px;
+            }
+          }
+          h2 {
+            font-size: $fs-regular;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
