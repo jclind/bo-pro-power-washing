@@ -1,6 +1,7 @@
 @use '../../../../styles/vars' as *;
 
 .hero {
+  position: relative;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
   .content {
@@ -16,12 +17,52 @@
   .image {
     display: flex;
     justify-content: flex-end;
+    margin: 0 auto;
     margin-top: $gap-large;
     width: 100%;
+    z-index: -1;
     img {
       height: 100%;
       width: 100%;
       object-fit: contain;
+    }
+  }
+  @media (min-width: 800px) {
+    padding-bottom: $gap-2xl !important;
+    .content {
+      justify-content: flex-start;
+      h1,
+      p {
+        text-align: left;
+        max-width: 500px;
+      }
+      .buttons {
+        margin: 0;
+      }
+    }
+    .image {
+      width: 500px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  @media (min-width: 900px) {
+    padding-bottom: $gap-3xl !important;
+    .image {
+      width: 700px;
+    }
+  }
+  @media (min-width: 1000px) {
+    padding-bottom: $gap-4xl !important;
+    .image {
+      width: 900px;
+    }
+  }
+  @media (min-width: 1100px) {
+    padding-bottom: $gap-4xl !important;
+    .image {
+      width: 1000px;
     }
   }
 }

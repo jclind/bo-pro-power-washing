@@ -83,6 +83,10 @@ button,
   margin: 0 auto;
   max-width: $max-width-container;
   width: $max-width-percentage;
+
+  @media (min-width: 800px) {
+    align-items: flex-start;
+  }
 }
 .padding-xlarge {
   padding: $gap-xl 0;
