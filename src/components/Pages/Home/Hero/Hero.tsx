@@ -19,7 +19,6 @@ const Hero = () => {
             <ButtonLink
               text='Schedule a Free Estimate'
               link='/contact'
-              color='tertiary'
               size='large'
             />
           </div>

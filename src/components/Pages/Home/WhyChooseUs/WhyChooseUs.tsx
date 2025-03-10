@@ -45,12 +45,7 @@ const WhyChooseUs = () => {
               </div>
             ))}
           </div>
-          <ButtonLink
-            text="Let's Get Started"
-            link='/services'
-            color='tertiary'
-            size='large'
-          />
+          <ButtonLink text="Let's Get Started" link='/services' size='large' />
         </div>
       </div>
     </div>

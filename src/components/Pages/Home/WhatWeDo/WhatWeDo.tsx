@@ -20,7 +20,6 @@ const WhatWeDo = () => {
               <ButtonLink
                 text='See All Services'
                 link='/services'
-                color='tertiary'
                 size='large'
               />
             </div>
@@ -39,12 +38,7 @@ const WhatWeDo = () => {
             ))}
           </div>
           <div className={styles.button_container_mobile}>
-            <ButtonLink
-              text='See All Services'
-              link='/services'
-              color='tertiary'
-              size='large'
-            />
+            <ButtonLink text='See All Services' link='/services' size='large' />
           </div>
         </div>
       </div>
