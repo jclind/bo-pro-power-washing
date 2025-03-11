@@ -3,15 +3,18 @@
 .about_the_owner {
   background: $primary-accent;
   padding-top: $gap-2xl;
+  padding-bottom: $gap-xl;
 
   .content {
     .image {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0 auto;
       width: 100%;
       aspect-ratio: 1 / 1;
       max-width: 350px;
+      max-height: 350px;
       background: $primary-background;
       border-radius: 20px;
       img {
@@ -31,6 +34,37 @@
       p {
         text-align: center;
         padding-bottom: $gap-medium;
+      }
+      .paragraphs {
+        margin-bottom: $gap-medium;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+      gap: $gap-xl;
+
+      .image {
+        width: 50%;
+        margin: 0;
+      }
+      .text_section {
+        width: 50%;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+        h1,
+        p {
+          text-align: left;
+        }
+        p {
+          padding-bottom: $gap-medium;
+        }
       }
     }
   }
