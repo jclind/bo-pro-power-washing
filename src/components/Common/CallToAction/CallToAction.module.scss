@@ -87,4 +87,13 @@
       }
     }
   }
+
+  &.gradient {
+    padding-top: $gap-2xl;
+    background: linear-gradient(
+      to bottom,
+      $primary-accent,
+      $primary-background
+    );
+  }
 }

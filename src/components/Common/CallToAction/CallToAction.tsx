@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from './CallToAction.module.scss'
 import { ButtonLink } from '../ButtonLink'
-const CallToAction = ({ background }: { background?: '' | 'gradient' }) => {
+const CallToAction = ({
+  background = 'none',
+}: {
+  background?: 'none' | 'gradient'
+}) => {
   return (
-    <div className={styles.call_to_action}>
+    <div className={`${styles.call_to_action} ${styles[background]}`}>
       <div className='page__inner'>
         <div className={`${styles.content} card`}>
           <div className={styles.text_section}>

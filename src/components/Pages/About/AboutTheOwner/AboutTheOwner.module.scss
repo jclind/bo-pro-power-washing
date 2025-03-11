@@ -1,1 +1,37 @@
 @use '../../../../styles/vars' as *;
+
+.about_the_owner {
+  background: $primary-accent;
+  padding-top: $gap-2xl;
+
+  .content {
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 350px;
+      background: $primary-background;
+      border-radius: 20px;
+      img {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+      }
+    }
+    .text_section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: $gap-xl;
+      h1 {
+        padding-bottom: $gap-large;
+      }
+      p {
+        text-align: center;
+        padding-bottom: $gap-medium;
+      }
+    }
+  }
+}
