@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
+import OurValues from '../components/Pages/About/OurValues';
+import AboutTheOwner from '../components/Pages/About/AboutTheOwner';
+import CallToAction from '../components/Common/CallToAction';
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -9,6 +11,7 @@ import '../styles/global.scss';
 ---
 
 <Layout>
-  <Hero />
-  
+  <OurValues />
+  <AboutTheOwner />
+  <CallToAction background="gradient" />
 </Layout>

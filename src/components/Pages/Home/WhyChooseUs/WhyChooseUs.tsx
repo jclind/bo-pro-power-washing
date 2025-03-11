@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from './WhyChooseUs.module.scss'
-import { values } from './values'
-import { FaRegCheckCircle } from 'react-icons/fa'
 import { ButtonLink } from '../../../Common/ButtonLink'
+import ValuesList from '../../../Common/ValuesList'
 
 const WhyChooseUs = () => {
   return (
@@ -31,20 +30,7 @@ const WhyChooseUs = () => {
               />
             </div>
           </div>
-
-          <div className={styles.values}>
-            {values.map(value => (
-              <div className={`${styles.value} card`}>
-                <div className={styles.head}>
-                  <div className={styles.value_icon}>
-                    <FaRegCheckCircle className={styles.icon} />
-                  </div>
-                  <h2>{value.title}</h2>
-                </div>
-                <p className='section-paragraph'>{value.description}</p>
-              </div>
-            ))}
-          </div>
+          <ValuesList />
           <ButtonLink text="Let's Get Started" link='/services' size='large' />
         </div>
       </div>

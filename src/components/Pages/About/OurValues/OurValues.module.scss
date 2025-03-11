@@ -1,0 +1,82 @@
+@use '../../../../styles/vars' as *;
+
+.our_values {
+  .content {
+    .mobile_title {
+      padding-bottom: $gap-xl;
+      text-align: left;
+    }
+    .image {
+      width: 90%;
+      max-width: 550px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .text_section {
+      margin-top: $gap-large;
+      .desktop_title {
+        display: none;
+        text-align: left;
+      }
+      .paragraphs {
+        margin-bottom: $gap-large;
+      }
+
+      p {
+        margin-top: $gap-medium;
+        text-align: left;
+      }
+    }
+  }
+
+  @media (min-width: 500px) {
+    .content {
+      .mobile_title {
+        text-align: center;
+      }
+      .text_section {
+        .paragraphs {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .content {
+      display: flex;
+      align-items: flex-start;
+      gap: $gap-xl;
+      .image {
+        width: 50%;
+      }
+      .mobile_title {
+        display: none;
+      }
+
+      .text_section {
+        margin: 0;
+        width: 50%;
+        .desktop_title {
+          display: block;
+        }
+        .paragraphs {
+          margin-bottom: $gap-xl;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

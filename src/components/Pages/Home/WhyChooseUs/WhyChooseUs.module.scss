@@ -28,44 +28,6 @@
         object-fit: contain;
       }
     }
-    .values {
-      $value-border: 1px solid $border-color;
-
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: $gap-medium;
-      border-top: $value-border;
-      border-bottom: $value-border;
-      padding: $gap-large 0;
-
-      .value {
-        width: 100%;
-        .head {
-          display: flex;
-          align-items: center;
-          gap: $gap-small;
-          color: $primary-accent;
-          width: 100%;
-          // justify-content: center;
-          margin-bottom: $gap-regular;
-          .value_icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .icon {
-              height: 24px;
-              width: 24px;
-            }
-          }
-          h2 {
-            font-size: $fs-regular;
-            width: 100%;
-            text-align: center;
-          }
-        }
-      }
-    }
   }
 
   @media (min-width: 800px) {
@@ -83,10 +45,6 @@
             margin-left: 0;
           }
         }
-      }
-      .values {
-        gap: $gap-xl;
-        padding: $gap-xl 0;
       }
     }
   }
