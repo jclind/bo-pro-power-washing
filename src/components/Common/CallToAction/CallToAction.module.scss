@@ -2,10 +2,15 @@
 
 .call_to_action {
   .content {
+    overflow: hidden;
+    flex-direction: column;
     position: relative;
     background: $primary-accent;
     padding: 0;
     margin: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $gap-xl;
 
     .text_section {
       width: 100%;
@@ -36,7 +41,6 @@
       align-items: flex-end;
       justify-content: center;
       height: 250px;
-      overflow: hidden;
       border-radius: $border-radius;
 
       img {
@@ -47,6 +51,39 @@
         height: 200px;
         object-fit: cover;
         object-position: top;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .content {
+      display: flex;
+      flex-direction: row;
+      .text_section {
+        align-items: flex-start;
+        margin-bottom: $gap-large;
+        margin-left: $gap-large;
+        h1,
+        p {
+          text-align: left;
+          max-width: 400px;
+        }
+      }
+      .image {
+        // height: 100%;
+        width: 600px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        img {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto 0;
+          left: 50px;
+          height: 200%;
+          width: 600px;
+          object-position: left;
+        }
       }
     }
   }
