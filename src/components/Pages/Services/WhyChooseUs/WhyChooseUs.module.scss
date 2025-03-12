@@ -1,1 +1,11 @@
 @use '../../../../styles/vars' as *;
+
+.why_choose_us {
+  background: $primary-accent;
+  padding-top: $gap-xl;
+  .content {
+    h1 {
+      padding-bottom: $gap-medium;
+    }
+  }
+}

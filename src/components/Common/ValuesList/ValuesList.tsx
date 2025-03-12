@@ -6,12 +6,18 @@ import { values } from '../../../assets/data/values'
 const ValuesList = ({
   spacing = 'regular',
   align = 'center',
+  border = true,
 }: {
   spacing?: 'small' | 'regular'
   align?: 'left' | 'center'
+  border?: boolean
 }) => {
   return (
-    <div className={`${styles.values} ${styles[spacing]} ${styles[align]}`}>
+    <div
+      className={`${styles.values} ${styles[spacing]} ${styles[align]} ${
+        border && styles.border_true
+      }`}
+    >
       {values.map(value => (
         <div className={`${styles.value} card`}>
           <div className={styles.head}>

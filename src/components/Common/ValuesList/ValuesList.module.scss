@@ -7,9 +7,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: $gap-medium;
-  border-top: $value-border;
-  border-bottom: $value-border;
+
   padding: $gap-large 0;
+
+  &.border_true {
+    border-top: $value-border;
+    border-bottom: $value-border;
+  }
 
   .value {
     width: 100%;
