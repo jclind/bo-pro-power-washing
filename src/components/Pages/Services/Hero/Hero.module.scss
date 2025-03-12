@@ -1,0 +1,40 @@
+@use '../../../../styles/vars' as *;
+
+.hero {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    h1 {
+      padding-bottom: $gap-medium;
+    }
+
+    .background_image {
+      z-index: -1;
+      pointer-events: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      // background: red;
+      height: 400px;
+      width: 750px;
+      padding-bottom: $gap-large;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .content {
+      .background_image {
+        width: 650px;
+      }
+    }
+  }
+}
