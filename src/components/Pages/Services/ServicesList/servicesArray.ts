@@ -1,4 +1,4 @@
-export const servicesList = [
+export const servicesArray = [
   {
     title: 'Driveway & Sidewalk Cleaning',
     description:

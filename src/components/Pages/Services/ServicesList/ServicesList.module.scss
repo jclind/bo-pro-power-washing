@@ -4,6 +4,7 @@
   .content {
     box-sizing: border-box;
     max-width: 100%;
+    margin-bottom: $gap-2xl;
     .services {
       display: flex;
       flex-wrap: wrap;
