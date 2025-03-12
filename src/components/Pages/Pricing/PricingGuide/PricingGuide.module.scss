@@ -1,1 +1,46 @@
 @use '../../../../styles/vars' as *;
+
+.pricing_guide {
+  background: $secondary-background;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+    .image {
+      height: 100%;
+      width: 100%;
+      max-width: 450px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .text_section {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-xl;
+      h2 {
+        font-size: $fs-large;
+        font-weight: 800;
+        margin-bottom: $gap-large;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+        li {
+          strong {
+            color: $primary-text;
+          }
+          font-size: $fs-regular;
+        }
+      }
+      p {
+        margin-top: $gap-large;
+      }
+    }
+  }
+}

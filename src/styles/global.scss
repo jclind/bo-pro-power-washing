@@ -30,7 +30,8 @@ body {
 h1 {
   font-weight: 600;
 }
-p {
+p,
+li {
   line-height: 1.3;
   max-width: $max-width-paragraph;
   width: 100%;
