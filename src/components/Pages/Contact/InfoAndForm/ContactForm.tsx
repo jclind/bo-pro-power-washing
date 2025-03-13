@@ -67,6 +67,8 @@ const ContactForm = () => {
           name='phone'
           required
           onChange={handleChange}
+          minLength={10}
+          maxLength={15}
           value={formData.phone}
           placeholder='888-888-8888'
         />
