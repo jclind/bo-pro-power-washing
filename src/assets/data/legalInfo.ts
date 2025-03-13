@@ -9,3 +9,4 @@ export const FULL_ADDRESS = `${ADDRESS}, ${CITY}, ${STATE} ${ZIP_CODE}, ${COUNTR
 
 export const LEGAL_NAME = 'Placeholder Company Name'
 export const WEBSITE_URL = 'https://placeholder.com'
+export const INSTAGRAM_URL = 'https://www.instagram.com/bopropower/'
