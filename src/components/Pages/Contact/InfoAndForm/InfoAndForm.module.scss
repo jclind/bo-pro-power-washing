@@ -1,0 +1,101 @@
+@use '../../../../styles/vars' as *;
+
+.info_and_form {
+  padding-top: $gap-xl;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+    .form_content {
+      .info {
+        h1 {
+          margin-bottom: $gap-regular;
+        }
+        h1,
+        p {
+          text-align: left;
+        }
+        .contact_info {
+          margin-top: $gap-large;
+          display: flex;
+          flex-direction: column;
+          gap: $gap-regular;
+          .contact_item {
+            display: flex;
+            align-items: center;
+            gap: $gap-small;
+            color: $primary-accent;
+            a {
+              color: $primary-accent;
+              font-weight: 500;
+            }
+            .icon_container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .icon {
+                height: 22px;
+                width: 22px;
+                // stroke-width: 1;
+              }
+            }
+          }
+        }
+      }
+      .form {
+        margin-top: $gap-xl;
+      }
+    }
+    .map {
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.contact_form {
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: $fs-small;
+    font-weight: 500;
+    margin-bottom: $gap-regular;
+    input,
+    textarea {
+      margin-top: $gap-tiny;
+      height: 40px;
+      width: 100%;
+      border-radius: $border-radius;
+      border: 1px solid $border-color;
+      outline-color: $primary-accent;
+      outline-offset: -1px;
+      padding: 0 $gap-regular;
+      color: $primary-text;
+      background: $primary-background;
+      ::placeholder {
+        color: $placeholder-text;
+      }
+    }
+    textarea {
+      padding: $gap-regular;
+      min-height: 100px;
+    }
+  }
+  button {
+    background: $secondary-accent;
+    color: $primary-text;
+    font-size: $fs-regular;
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    border-radius: $border-radius;
+    margin-top: $gap-large;
+  }
+}

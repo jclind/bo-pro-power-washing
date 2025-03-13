@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ContactForm.module.scss'
+import styles from './InfoAndForm.module.scss'
 import { FaEnvelope, FaPhoneAlt, FaInstagramSquare } from 'react-icons/fa'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { BsTelephone, BsEnvelope } from 'react-icons/bs'
@@ -8,11 +8,12 @@ import {
   INSTAGRAM_URL,
   PHONE_NUMBER,
 } from '../../../../assets/data/legalInfo'
+import ContactForm from './ContactForm'
 
-const ContactForm = () => {
+const InfoAndForm = () => {
   return (
-    <div className={styles.contact_form}>
-      <div className='page__inner page__horizontal-spacing-2xl'>
+    <div className={styles.info_and_form}>
+      <div className='page__inner'>
         <div className={styles.content}>
           <div className={styles.form_content}>
             <div className={styles.info}>
@@ -42,12 +43,22 @@ const ContactForm = () => {
                 </div>
               </div>
             </div>
+            <div className={styles.form}>
+              <ContactForm />
+            </div>
           </div>
-          <div className={styles.image}></div>
+          <div className={styles.map}>
+            <div className={styles.image}>
+              <img
+                src='/images/contact/map.webp'
+                alt='Cranberry Township Map Of Service'
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-export default ContactForm
+export default InfoAndForm
