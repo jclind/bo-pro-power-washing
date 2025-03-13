@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import styles from './ButtonLink.module.scss'
 
 const ButtonLink = ({
@@ -7,7 +7,7 @@ const ButtonLink = ({
   color = 'primary',
   size = 'medium',
 }: {
-  text: string
+  text: string | JSX.Element
   link: string
   color?: 'primary' | 'secondary' | 'tertiary' | 'white'
   size?: 'small' | 'medium' | 'large' | 'full_width'

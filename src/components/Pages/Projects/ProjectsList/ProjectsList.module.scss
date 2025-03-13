@@ -1,1 +1,56 @@
 @use '../../../../styles/vars' as *;
+
+.projects_list {
+  .content {
+    width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-xl;
+  width: 100%;
+}
+.single_project {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  gap: $gap-medium;
+
+  .image {
+    max-width: 450px;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: $border-radius;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text_section {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: $fs-medium;
+      color: $primary-accent;
+      margin-bottom: $gap-regular;
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: $gap-tiny;
+      color: $secondary-text;
+      font-weight: 500;
+      margin-bottom: $gap-medium;
+    }
+    .short_description {
+      text-align: left;
+      font-size: $fs-regular;
+      margin-bottom: $gap-medium;
+    }
+  }
+}
