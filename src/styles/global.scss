@@ -34,6 +34,7 @@ p,
 li {
   line-height: 1.3;
   max-width: $max-width-paragraph;
+  letter-spacing: -0.5px;
   width: 100%;
 }
 
@@ -172,6 +173,26 @@ button,
     font-size: $fs-card-text;
     text-align: center;
   }
+}
+
+// Hero Styling
+.hero-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $gap-2xl 0;
+}
+.hero-title {
+  font-size: $fs-xlarge;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: $gap-medium;
+}
+.hero-description {
+  font-size: $fs-regular;
+  text-align: center;
 }
 
 .spacer {
