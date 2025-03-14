@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './testimonials.module.scss'
+import styles from './Testimonials.module.scss'
 import { testimonialList } from './testimonialList'
 import { FaQuoteLeft, FaStar, FaRegStar } from 'react-icons/fa'
 const Testimonials = () => {
