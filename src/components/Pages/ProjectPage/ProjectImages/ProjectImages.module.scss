@@ -1,0 +1,34 @@
+@use '../../../../styles/vars' as *;
+
+.project_images {
+  margin-bottom: $gap-2xl;
+  .content {
+    width: 100%;
+    h1 {
+      font-size: $fs-large;
+      text-align: left;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $gap-medium;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: $gap-large;
+      .image {
+        max-width: 160px;
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        height: 100%;
+        border-radius: $border-radius;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

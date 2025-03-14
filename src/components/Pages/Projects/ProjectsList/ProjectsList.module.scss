@@ -1,6 +1,7 @@
 @use '../../../../styles/vars' as *;
 
 .projects_list {
+  margin-top: $gap-xl;
   .content {
     width: 100%;
   }
@@ -49,6 +50,10 @@
       color: $secondary-text;
       font-weight: 500;
       margin-bottom: $gap-medium;
+      .icon {
+        height: 20px;
+        width: 20px;
+      }
     }
     .short_description {
       text-align: left;

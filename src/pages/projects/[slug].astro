@@ -1,9 +1,27 @@
 ---
-import { projects } from '../../assets/data/projects';
+import { projects } from "../../assets/data/projects";// Example static data
+import CallToAction from "../../components/Common/CallToAction";
+import ProjectContent from "../../components/Pages/ProjectPage/ProjectContent";
+import ProjectImages from "../../components/Pages/ProjectPage/ProjectImages";
+import Layout from "../../layouts/Layout.astro";
+import '../../styles/global.scss';
 
 export async function getStaticPaths() {
   return projects.map((project) => ({
-    params: { slug: project.id }
+    params: { slug: project.id }, // Generate a page for each project
   }));
 }
+
+const { slug } = Astro.params;
+const project = projects.find((p) => p.id === Number(slug));
+
+if (!project) {
+  throw new Error(`Project not found: ${slug}`);
+}
 ---
+
+<Layout>
+  <ProjectContent project={project} />
+  <ProjectImages project={project} />
+  <CallToAction />
+</Layout>
