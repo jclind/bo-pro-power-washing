@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './InfoAndForm.module.scss'
 import { FaEnvelope, FaPhoneAlt, FaInstagramSquare } from 'react-icons/fa'
-import { AiOutlineInstagram } from 'react-icons/ai'
-import { BsTelephone, BsEnvelope } from 'react-icons/bs'
 import {
   EMAIL_ADDRESS,
   INSTAGRAM_URL,
