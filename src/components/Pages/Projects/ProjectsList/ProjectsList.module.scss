@@ -9,9 +9,11 @@
 .list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: $gap-xl;
   width: 100%;
 }
+
 .single_project {
   display: flex;
   flex-direction: column;
@@ -23,6 +25,7 @@
     max-width: 450px;
     width: 100%;
     aspect-ratio: 3 / 2;
+    height: 100%;
     overflow: hidden;
     border-radius: $border-radius;
     img {
@@ -51,6 +54,36 @@
       text-align: left;
       font-size: $fs-regular;
       margin-bottom: $gap-medium;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .single_project {
+    flex-direction: row;
+    align-items: center;
+    gap: $gap-medium;
+    width: 100%;
+    max-width: 100% !important;
+    .image {
+      width: 60%;
+    }
+    .text_section {
+      h2 {
+        font-size: $fs-xlarge;
+      }
+      .short_description {
+        margin-top: $gap-small;
+        margin-bottom: $gap-large;
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .single_project {
+    gap: $gap-xl;
+    .image {
+      width: 50%;
     }
   }
 }
