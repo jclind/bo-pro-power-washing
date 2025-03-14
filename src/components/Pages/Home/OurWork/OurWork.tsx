@@ -28,7 +28,7 @@ const OurWork = () => {
               </div>
             </div>
           </div>
-          <ButtonLink text='See More' link='/projects' />
+          <ButtonLink text='See All Projects' link='/projects' />
         </div>
       </div>
     </div>
