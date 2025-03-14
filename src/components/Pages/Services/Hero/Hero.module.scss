@@ -1,12 +1,17 @@
 @use '../../../../styles/vars' as *;
 
 .hero {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
     h1 {
       padding-bottom: $gap-medium;
     }
