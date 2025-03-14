@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.image}>
-        <img src='/images/home/hero.webp' />
+        <img src='/images/home/hero.webp' alt='Art of man powerwashing' />
       </div>
     </div>
   )

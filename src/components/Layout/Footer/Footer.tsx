@@ -51,11 +51,11 @@ const Footer = () => {
             By{' '}
             <a href='https://deerlakeswebdesigns.com/'>Deer Lakes Web Design</a>
           </div>
-          <div className={styles.legal}>
+          {/* <div className={styles.legal}>
             <a href='/terms-of-service'>Terms</a>
             <span>|</span>
             <a href='/privacy-policy'>Privacy</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

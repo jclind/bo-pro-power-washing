@@ -17,14 +17,17 @@
   .image {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     margin: 0 auto;
     margin-top: $gap-large;
     width: 100%;
+    aspect-ratio: 16 / 8.9;
+
     z-index: -1;
     img {
       height: 100%;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   @media (min-width: 800px) {
@@ -45,6 +48,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      img {
+        object-fit: contain;
+      }
     }
   }
   @media (min-width: 900px) {
@@ -56,7 +62,7 @@
   @media (min-width: 1000px) {
     padding-bottom: $gap-4xl !important;
     .image {
-      width: 900px;
+      width: 800px;
     }
   }
   @media (min-width: 1100px) {
