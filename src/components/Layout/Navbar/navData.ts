@@ -12,7 +12,7 @@ export const navLinks = [
     path: '/services',
   },
   {
-    title: 'Our Projects',
+    title: 'Projects',
     path: '/projects',
   },
   {
