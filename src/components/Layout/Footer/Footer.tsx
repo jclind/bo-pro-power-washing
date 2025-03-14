@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className={styles.links}>
               {links.map(link => (
-                <div className={styles.link}>
+                <div className={styles.link} key={link.title}>
                   <a href={link.path}>{link.title}</a>
                 </div>
               ))}
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className={styles.contact_info}>
             {contactInfo.map(item => (
-              <div className={styles.item}>
+              <div className={styles.item} key={item.text}>
                 <div className={styles.icon__container}>
                   <item.icon className={styles.icon} />
                 </div>

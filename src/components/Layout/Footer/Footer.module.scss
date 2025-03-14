@@ -105,6 +105,11 @@
         color: $secondary-text;
       }
     }
+    .text {
+      a {
+        text-decoration: underline;
+      }
+    }
     @media (min-width: $breakpoint-md) {
       flex-direction: row;
       justify-content: space-between;

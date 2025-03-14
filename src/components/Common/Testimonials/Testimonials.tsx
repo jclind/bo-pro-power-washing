@@ -27,7 +27,7 @@ const Testimonials = () => {
 
           <div className={styles.list}>
             {testimonialList.map(t => (
-              <div className={`${styles.item} card`}>
+              <div className={`${styles.item} card`} key={t.name}>
                 <div className={styles.icon_container}>
                   <FaQuoteLeft className={styles.icon} />
                 </div>

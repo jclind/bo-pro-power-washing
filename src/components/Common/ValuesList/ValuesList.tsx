@@ -19,7 +19,7 @@ const ValuesList = ({
       }`}
     >
       {values.map(value => (
-        <div className={`${styles.value} card`}>
+        <div className={`${styles.value} card`} key={value.title}>
           <div className={styles.head}>
             <div className={styles.value_icon}>
               <FaRegCheckCircle className={styles.icon} />

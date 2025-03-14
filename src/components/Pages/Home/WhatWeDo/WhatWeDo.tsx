@@ -26,7 +26,7 @@ const WhatWeDo = () => {
           </div>
           <div className={styles.services}>
             {services.map(service => (
-              <div className={`${styles.service} card`}>
+              <div className={`${styles.service} card`} key={service.title}>
                 <div className={styles.service_icon}>
                   <service.icon className={styles.icon} />
                 </div>
