@@ -1,6 +1,13 @@
 ---
 import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+const { title = "Bo Pro Power Washing", description = "Your home's exterior is the first thing people notice—make it count! Bo Pro Power Washing offers professional cleaning services for driveways, decks, siding, and sidewalks in Cranberry Township and beyond. With a commitment to quality and customer satisfaction, we're here to make your property shine. Starting at just $150 per job!" } = Astro.props;
+const siteName = "Bo Pro Power Washing"
 ---
 
 
@@ -12,7 +19,15 @@ import Footer from '../components/Layout/Footer';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Bo Pro Power Washing</title>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url.href} />
+		<meta property="og:image" content="/images/logo.webp" />
+		<meta property="og:site_name" content={siteName} />
+
+		<link rel="canonical" href={Astro.url.href} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

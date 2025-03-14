@@ -71,7 +71,9 @@
           display: block;
         }
         .paragraphs {
+          width: fit-content;
           margin-bottom: $gap-xl;
+
           p {
             text-align: left;
           }
