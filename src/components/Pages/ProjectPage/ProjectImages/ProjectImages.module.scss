@@ -13,7 +13,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: $gap-medium;
-      justify-content: space-between;
       width: 100%;
       margin-top: $gap-large;
       .image {
@@ -27,6 +26,16 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    .content {
+      .images {
+        .image {
+          max-width: 250px;
         }
       }
     }
