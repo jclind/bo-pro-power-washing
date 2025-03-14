@@ -8,7 +8,7 @@ const AboutTheOwner = () => {
       <div className='page__inner '>
         <div className={styles.content}>
           <div className={styles.image}>
-            <img src='images/about/headshot.svg' alt='owner headshot' />
+            <img src='/images/about/headshot.svg' alt='owner headshot' />
           </div>
           <div className={styles.text_section}>
             <h1 className='section-title text-inverted'>Meet The Owner</h1>
