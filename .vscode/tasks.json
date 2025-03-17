@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create React Component",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "& {",
+        "$folderName = '${input:componentName}';",
+        "New-Item -Path ./$folderName -ItemType Directory -Force;",
+
+        "$componentContent = @\"",
+        "import React from 'react';",
+        "import styles from './$folderName.module.scss';",
+        "",
+        "const $folderName = () => {",
+        "  return (",
+        "    <div className={styles.container}>",
+        "      <div className='page__inner'>",
+        "        <div className='content'>$folderName</div>",
+        "      </div>",
+        "    </div>",
+        "  );",
+        "};",
+        "",
+        "export default $folderName;",
+        "\"@;",
+
+        "$styleContent = @\"",
+        ".container {",
+        "  display: flex;",
+        "}",
+        "\"@;",
+
+        "$indexContent = @\"",
+        "export { default } from './$folderName';",
+        "\"@;",
+
+        "Set-Content -Path ./$folderName/$folderName.tsx -Value $componentContent;",
+        "Set-Content -Path ./$folderName/$folderName.module.scss -Value $styleContent;",
+        "Set-Content -Path ./$folderName/index.tsx -Value $indexContent;",
+        "}"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "componentName",
+      "description": "Enter the name of the React component:",
+      "default": "NewComponent",
+      "type": "promptString"
+    }
+  ]
+}
